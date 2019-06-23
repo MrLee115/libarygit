@@ -1,0 +1,8 @@
+private static final String url = "jdbc:mysql://localhost:3306/kaoshi";
+private static final String username = "root";
+private static final String password = "root";
+	
+public static JdbcTemplate getJdbcTemplate() {
+  return new JdbcTemplate(new DriverManagerDataSource(url, username, password));
+}
+	
